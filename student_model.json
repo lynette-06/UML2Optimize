@@ -1,0 +1,24 @@
+
+{
+  "system_name": "StudentManagementSystem",
+  "components": [
+    {
+      "name": "Student",
+      "attributes": [
+        {"name": "student_id", "type": "int"},
+        {"name": "name", "type": "str"}
+      ]
+    },
+    {
+      "name": "Course",
+      "attributes": [
+        {"name": "course_id", "type": "int"},
+        {"name": "course_name", "type": "str"}
+      ]
+    }
+  ],
+  "optimization_demo": {
+    "function_name": "calculate_total",
+    "expression": "(10 * 20) + 5"
+  }
+}

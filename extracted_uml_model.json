@@ -1,0 +1,151 @@
+{
+    "name": "ExtractedUMLModel",
+    "components": [
+        {
+            "name": "Admin",
+            "attributes": [
+                "admintd : int",
+                "= role : String",
+                "registerNumber : String",
+                "department : String",
+                "year: int"
+            ],
+            "methods": [
+                "manageUsers() : void",
+                "manageListings() : void",
+                "monitorTransactions() : void",
+                "register() : void",
+                "manageCoinSystem() : void",
+                "browseListings() : void",
+                "purchaseltem() : void",
+                "createListing()",
+                "rateSeller() : void"
+            ]
+        },
+        {
+            "name": "Payment",
+            "attributes": [
+                "paymentid : int",
+                "= amount : double",
+                "paymentMethod : String",
+                "paymentDate : Date",
+                "status : String"
+            ],
+            "methods": [
+                "processPayment() : boolean",
+                "verifyPayment() : boolean"
+            ]
+        },
+        {
+            "name": "Transaction",
+            "attributes": [
+                "= amount : double",
+                "transactionDate : Date"
+            ],
+            "methods": []
+        },
+        {
+            "name": "Rating",
+            "attributes": [
+                "ratingld : int",
+                "score : int",
+                "comment : String",
+                "ratingDate : Date"
+            ],
+            "methods": [
+                "submitRating(",
+                "updateRating("
+            ]
+        },
+        {
+            "name": "Notification",
+            "attributes": [
+                "message : String",
+                "date : Date",
+                "isRead : boolean"
+            ],
+            "methods": [
+                "sendNotification() : void",
+                "markAsRead() : void"
+            ]
+        },
+        {
+            "name": "Listing",
+            "attributes": [
+                "transactionType : String",
+                "status : String",
+                "= title : Stri",
+                "description : String",
+                ">| - price : double"
+            ],
+            "methods": [
+                "processTransaction() : boolean",
+                "cancelTransaction() : void"
+            ]
+        },
+        {
+            "name": "Wallet",
+            "attributes": [
+                "= walletid : int",
+                "balance : double",
+                "createdDate : Date"
+            ],
+            "methods": [
+                "addCoins(amount : double) : void",
+                "deductCoins(amount : double) : boolean",
+                "checkBalance() : double"
+            ]
+        },
+        {
+            "name": "User",
+            "attributes": [
+                "category : String",
+                "status : String",
+                "createdDate : Date"
+            ],
+            "methods": [
+                "createListing() : void",
+                "updateListing() : void",
+                "removeListing() : void"
+            ]
+        },
+        {
+            "name": "Product",
+            "attributes": [
+                "productid : int",
+                "condition : String",
+                "quantity : int"
+            ],
+            "methods": [
+                "updateCondition()"
+            ]
+        },
+        {
+            "name": "Service",
+            "attributes": [
+                "serviceld : int",
+                "serviceType : String",
+                "availability : String"
+            ],
+            "methods": [
+                "updateAvailability() : void"
+            ]
+        },
+        {
+            "name": "DigitalCoin",
+            "attributes": [
+                "coinld : int",
+                "issueDate : Date"
+            ],
+            "methods": [
+                "transferCoins() : void"
+            ]
+        }
+    ],
+    "relationships": [],
+    "review_required": true,
+    "missing_expected_classes": [
+        "Student"
+    ],
+    "warning": "OCR-based draft only. Review all attributes and methods. Relationships, inheritance, and multiplicities are not automatically reconstructed."
+}
